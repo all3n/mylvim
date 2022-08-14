@@ -70,6 +70,7 @@ lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.terminal.direction = "horizontal"
 
+-- https://github.com/kyazdani42/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
@@ -183,7 +184,8 @@ lvim.plugins = {
   {
     "simrat39/symbols-outline.nvim",
     cmd = "SymbolsOutline",
-  }
+  },
+  { "Xuyuanp/scrollbar.nvim" }
 }
 
 
@@ -205,6 +207,9 @@ require('telescope').setup {
     }
   }
 }
+
+
+
 -- }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
