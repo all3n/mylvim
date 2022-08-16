@@ -27,6 +27,8 @@ lvim.builtin.which_key.mappings["u"] = {
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
 -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
+vim.keymap.set("n", "<S-Tab>", ":bNext<cr>")
+vim.keymap.set("n", "<F9>", ":ClangdSwitchSourceHeader<cr>")
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
@@ -185,7 +187,8 @@ lvim.plugins = {
     "simrat39/symbols-outline.nvim",
     cmd = "SymbolsOutline",
   },
-  { "Xuyuanp/scrollbar.nvim" }
+  { "dstein64/vim-startuptime" },
+  { "fgheng/winbar.nvim" }
 }
 
 
